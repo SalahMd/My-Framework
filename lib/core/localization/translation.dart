@@ -2,8 +2,6 @@ import 'package:get/get.dart';
 import 'package:new_project/core/localization/arabic_language.dart';
 import 'package:new_project/core/localization/english_language.dart';
 
-
-
 class Translation extends Translations {
   @override
   Map<String, Map<String, String>> get keys => {

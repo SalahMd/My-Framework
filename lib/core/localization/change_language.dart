@@ -5,9 +5,9 @@ import 'package:new_project/core/services/shared_pref.dart';
 class ChangeLanguage extends GetxController {
   Locale? language;
   Services sharedPref = Get.put(Services());
-  changeLang(String langcode) {
-    Locale locale = Locale(langcode);
-    sharedPref.sharedPreferences.setString("lang", langcode);
+  changeLang(String langCode) {
+    Locale locale = Locale(langCode);
+    sharedPref.sharedPreferences.setString("lang", langCode);
     Get.updateLocale(locale);
   }
 
@@ -22,9 +22,5 @@ class ChangeLanguage extends GetxController {
       language = Locale("ar");
     }
     super.onInit();
-  }
-
-  changeColor() {
-    update();
   }
 }
